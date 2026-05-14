@@ -1,0 +1,54 @@
+### Browse games (no auth needed)
+GET http://localhost:8080/api/games
+
+### Browse genres (no auth needed)
+GET http://localhost:8080/api/genres
+
+### Try to add as a visitor
+POST http://localhost:8080/games
+Authorization: Basic visitor password
+Content-Type: application/json
+
+{ "title": "Hades" }
+
+### Add as admin
+POST http://localhost:8080/api/games
+Authorization: Basic admin secret
+Content-Type: application/json
+
+{
+  "title": "Hades",
+  "price": 24.99,
+  "description": "Dungeon crawler",
+  "genres": [
+    { "id": 1 }
+  ]
+}
+
+### Delete as admin
+DELETE http://localhost:8080/api/games/1
+Authorization: Basic admin secret
+
+### Update game as admin
+PUT http://localhost:8080/api/games/1
+Authorization: Basic admin secret
+Content-Type: application/json
+
+{
+  "title": "Hades",
+  "price": 26.99,
+  "description": "Godlike roguelike",
+  "genres": [
+    { "id": 1 },
+    { "id": 2 }
+  ]
+}
+
+### Add genre as admin
+POST http://localhost:8080/api/genres
+Authorization: Basic admin secret
+Content-Type: application/json
+
+{
+  "name": "RPG"
+}
