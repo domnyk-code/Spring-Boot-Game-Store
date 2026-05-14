@@ -21,6 +21,7 @@ Uses Docker for containerization of the app and database storage.
 The API uses simple Spring Boot Model - Repository - Service - Controller architecture for providing answers to requests.
 Both Video Games and Genres they belong to have their own dedicated schemas.
 PostgreSQL is used for data storage for the API.
+
 ---
 
 ## Project Structure
