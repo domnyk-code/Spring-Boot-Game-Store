@@ -48,11 +48,12 @@ game-store
 │   │   │    └─── VideoGameService.java
 │   ├───main/resources
 │   │   └───application.properties
-│   └───test/java/com/example/cdpr_game_store
-│       ├───repository_test/
-│       │    └─── RepositoryTest.java
-│       └───service_test/
-│           └─── ServiceTest.java
+│   └───test
+│       ├───/java/com/example/cdpr_game_store
+│       │   ├───repository_test/
+│       │   │    └─── RepositoryTest.java
+│           └───service_test/
+│               └─── ServiceTest.java
 ├─── docker-compose.yml
 ├─── Dockerfile
 ├─── mvnw
