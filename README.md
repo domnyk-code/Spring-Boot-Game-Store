@@ -27,43 +27,30 @@ PostgreSQL is used for data storage for the API.
 ## Project Structure
 ```
 game-store
-│
-├───.mvn
-│   └───wrapper
-│           maven-wrapper.properties
-│
+├───.mvn/wrapper
+│   └─── maven-wrapper.properties       
 ├───src
 │   ├───main/java/com/example/cdpr_game_store
-│   │   ├
-│   │   │
-│   │   ├───controller/
+│   │   ├─── CdprGameStoreApplication.java
+│   │   ├─── controller/
 │   │   │   ├─── GenreController.java
 │   │   │   └─── VideoGameController.java
-│   │   │  
-│   │   ├───entity/
-│   │   │   ├─── Genre.java
-│   │   │   └─── VideoGame.java
-│   │   │
-│   │   ├───repository/
-│   │   │   ├─── GenreRepository.java
-│   │   │   └─── VideoGameRepository.java
-│   │   │
-│   │   ├───security/
-│   │   │   └─── SecurityConfig.java
-│   │   │
-│   │   └───service/
-│   │   │   ├─── GenreService.java
-│   │   │   └─── VideoGameService.java
-│   │   │
-│   │   └─── CdprGameStoreApplication.java
-│   │
+│   │   ├─── entity/
+│   │   │    ├─── Genre.java
+│   │   │    └─── VideoGame.java
+│   │   ├─── repository/
+│   │   │    ├─── GenreRepository.java
+│   │   │    └─── VideoGameRepository.java
+│   │   ├─── security/
+│   │   │    └─── SecurityConfig.java
+│   │   └─── service/
+│   │   │    ├─── GenreService.java
+│   │   │    └─── VideoGameService.java
 │   ├───main/resources
 │   │   └───application.properties
-│   │      
 │   └───test/java/com/example/cdpr_game_store
 │       ├───repository_test/
 │       │    └─── RepositoryTest.java
-│       │
 │       └───service_test/
 │           └─── ServiceTest.java
 ├─── docker-compose.yml
