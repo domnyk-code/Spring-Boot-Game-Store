@@ -1,6 +1,7 @@
 # Game Store API 
 A simple backend for an online video game store, built with Spring Boot. Visitors can browse and search games; admins can manage the catalogue.
 Uses Docker for containerization of the app and database storage.
+
 ---
 
 ## Tech Stack
