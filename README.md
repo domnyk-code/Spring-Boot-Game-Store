@@ -27,9 +27,9 @@ PostgreSQL is used for data storage for the API.
 ## Project Structure
 ```
 game-store
-├───.mvn/wrapper
+├───.mvn/wrapper/
 │   └─── maven-wrapper.properties       
-├───src
+├───src/
 │   ├─── main/java/com/example/cdpr_game_store
 │   │    ├─── CdprGameStoreApplication.java
 │   │    ├─── controller/
@@ -46,10 +46,10 @@ game-store
 │   │    └─── service/
 │   │    │    ├─── GenreService.java
 │   │    │    └─── VideoGameService.java
-│   ├─── main/resources
+│   ├─── main/resources/
 │   │    └───application.properties
 │   └─── test/
-│        └─── java/com/example/cdpr_game_store
+│        └─── java/com/example/cdpr_game_store/
 │              ├─── repository_test/
 │              │    └─── RepositoryTest.java
 │              └─── service_test/
